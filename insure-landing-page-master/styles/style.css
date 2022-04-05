@@ -1,138 +1,91 @@
+
 * {
-    box-sizing: border-box;
-    margin-left: 100px;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
+
 body {
-    font-size: 16px;
-    color: black
-    https://fonts.google.com/specimen/Karla
+  font-family: 'Karla', sans-serif;
+}
+
+p {
+  line-height: 1.6em;
+  color: hsl(273, 4%, 51%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'DM Serif Display', sans-serif;
+}
+
+.button {
+  background: transparent;
+  color: #d7d4d4;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 15px 0;
+  padding: 10px 25px;
+  border: 2px solid #d7d4d4;
+  cursor: pointer;
 }
 
 
-.content-wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
+.header-container {
+  position: relative;
+  min-height: 1020px;
+  background-color: #fff;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 30px;
-}
+.header-image {
 
-header {
-    position: relative;
-}
-
-header .hero-image {
-    position:relative;
-    right: 200px;
-}
-
-header. logo {
-    margin-right: 100px;
-    flex-shrink: 0;
-    flex-basis: 100px;
-    cursor: pointer;
-}
-.container {
-display: flex;
-justify-content: space-between;
-align-items: flex-end;
-min-height: 50vh;
-
-}
-header li {
-    white-space: nowrap;
-    cursor: pointer;
-    color: var(--dark violet);
+  display: block;
+  width: 100%;
 }
 h1 {
-    background-color: --dark violet hsl(256, 26%, 20%)
-    color: white
-    
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.9em;
+  padding-top: 10%;
 }
-h2 {
-    font-family: serif;
-    font-weight: 700;
-    font-size:xx-large;
-   table-layout: auto; 
-}
+
 h3 {
-
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 3%;
 }
-h4 {
-
-}
-h5 {
-
-}
-h6 {
-    font-family: sans-serif;
-    font-weight: 700;
-    font-size: xx-large;
-}
-footer
+.process,
+.prices,
+.people {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 4%;
+  padding: 5%;
+  text-align: center;
 
 
-
-.content-wrapper {
-    max-width: 1200px;
-    margin: auto;
-}
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 30px;
+button.button {
+  display: block;
+  background-color: hsl(270, 9%, 17%);
+  color: white;
+  margin: auto;
+  width: 60%;
+  padding: 0.6em;
+  border: 2px solid white;
 }
 
-
-
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Dark Violet: hsl(256, 26%, 20%)
-- Grayish Blue: hsl(216, 30%, 68%)
-
-### Neutral
-
-- Very Dark Violet: hsl(270, 9%, 17%)
-- Dark Grayish Violet: hsl(273, 4%, 51%)
-- Very Light Gray: hsl(0, 0%, 98%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Headings
-
-- Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
-- Weights: 400
-
-### Body
-
-- Family: [Karla](https://fonts.google.com/specimen/Karla)
-- Weights: 400, 700
-
-## Icons
-
-You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
+.links a {
+  display: block;
+  margin: 0 auto 13%;
+  text-decoration: none;
+  list-style: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+}
